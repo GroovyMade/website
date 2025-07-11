@@ -30,8 +30,8 @@ time, mark, audio, video {
     font-synthesis: none;
 }
 html, body {
-    height: 100%;
-  background: white
+  height: 100%;
+  background: #f7f2ec
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -55,7 +55,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #222;
+    color: #30363a;
 }
 @supports (-webkit-marquee-repetition: infinite) and (object-fit: fill) {
     body {
@@ -71,6 +71,7 @@ strong {
 h1 {
     font-weight: 700;
     font-size: 20px;
+    font-family: 'Audiowide', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
 }
 #logo {
   border-radius: 50%;
@@ -122,4 +123,41 @@ footer a:hover svg {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.avatar {
+  border: 3px solid #30363a;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  display: block;
+}
+
+.avatar > div {
+  margin: 2px;
+  border-radius: 50%;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  overflow: hidden;
+}
+.avatar > div > div:first-of-type {
+  background: #46b969;
+  height: 6%;
+  margin-top: 28%
+}
+.avatar > div > div:nth-of-type(2) {
+  background: #f9a916;
+  height: 9%;
+  margin-top: 1.5px;
+}
+.avatar > div > div:nth-of-type(3) {
+  background: #f95742;
+  height: 13%;
+  margin-top: 1.5px;
+}
+.avatar > div > div:last-of-type{
+  background: #0080fe;
+  height: 100%;
+  margin-top: 1.5px;
 }
